@@ -35,8 +35,7 @@ const canadaInfo = {
     </>
   ),
   descriptions: [
-    "At Nexus Migration, we simplify your journey to Canada with expert, end-to-end relocation solutions. Whether you are aiming for Permanent Residency through Express Entry, seeking a Study Permit to advance your career, or applying for a Family Sponsorship, our certified consultants provide the strategic guidance you need.",
-    "We handle the complex documentation and IRCC compliance so you can focus on your future. From initial eligibility assessment to post-landing support, Nexus Migration is your trusted partner in turning Canadian aspirations into reality."
+    "At Nexus Migration, we simplify your journey to Canada with expert, end-to-end relocation solutions. Whether aiming for PR through Express Entry, a Study Permit, or Family Sponsorship, our certified consultants handle the complex documentation and IRCC compliance to turn your Canadian aspirations into reality."
   ],
   image: "https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?auto=format&fit=crop&w=600&q=80",
   alt: "Migrate to Canada"
@@ -53,8 +52,7 @@ const australiaInfo = {
     </>
   ),
   descriptions: [
-    "Unlock a world of opportunity in the Land Down Under with Nexus Migration's specialized Australian visa services. From navigating the points-based General Skilled Migration (GSM) program to securing Employer-Sponsored Visas or Student visas for world-class universities, we provide a clear path to your success.",
-    "Our team focuses on meticulous Skills Assessment and EOI (Expression of Interest) management to maximize your chances of an invite. At Nexus Migration, we turn the complexity of Australian immigration laws into a straightforward journey toward your PR and professional future."
+    "Unlock a world of opportunity in Australia with Nexus Migration's specialized visa services. From GSM points-based pathways to Employer-Sponsored and Student visas, our team manages your Skills Assessment and EOI to turn complex immigration laws into a straightforward journey toward your PR."
   ],
   image: "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?auto=format&fit=crop&w=600&q=80",
   alt: "Migrate to Australia"
@@ -70,8 +68,7 @@ const nzInfo = {
     </>
   ),
   descriptions: [
-    "Experience the unparalleled lifestyle of Aotearoa with Nexus Migration's dedicated New Zealand relocation support. We specialize in helping professionals and families navigate the Skilled Migrant Category and Green List pathways with precision.",
-    "Whether you are pursuing a Work to Residence visa or seeking a Post-Study Work Visa to launch your international career, our consultants ensure your application meets every requirement of Immigration New Zealand. Nexus Migration provides the local expertise and global vision necessary to help you settle, work, and thrive."
+    "Experience the unparalleled lifestyle of New Zealand with Nexus Migration's relocation support. We help professionals and families navigate the Skilled Migrant Category and Green List pathways, ensuring your Work to Residence or Student application meets every requirement of Immigration New Zealand."
   ],
   image: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=600&q=80",
   alt: "Migrate to New Zealand"
@@ -115,10 +112,11 @@ export default function App() {
           useWindowScroll={true}
           itemDistance={100}
           itemScale={0.06}
-          itemStackDistance={25}
+          itemStackDistance={12}
           baseScale={0.82}
           rotationAmount={0}
           blurAmount={2}
+          stackPosition="80px"
         >
           {/* Card 1: Free Assessment Form */}
           <ScrollStackItem itemClassName="card-assessment">

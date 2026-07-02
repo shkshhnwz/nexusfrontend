@@ -68,6 +68,19 @@ const ScrollStack = ({
 
     isUpdatingRef.current = true;
 
+    const isMobile = window.innerWidth <= 768;
+
+    if (isMobile) {
+      cardsRef.current.forEach((card) => {
+        if (card) {
+          card.style.transform = '';
+          card.style.filter = '';
+        }
+      });
+      isUpdatingRef.current = false;
+      return;
+    }
+
     const { scrollTop, containerHeight } = getScrollData();
     const stackPositionPx = parsePercentage(stackPosition, containerHeight);
     const scaleEndPositionPx = parsePercentage(scaleEndPosition, containerHeight);
