@@ -12,18 +12,18 @@
   --secondary: oklch(0.97 0 0);
   --secondary-glow: rgba(124, 58, 237, 0.3);
   --accent: oklch(0.97 0 0);
-  --bg-dark: #07080b;
-  --bg-card: rgba(20, 22, 33, 0.55);
-  --border-color: rgba(255, 255, 255, 0.08);
-  --border-hover: rgba(255, 255, 255, 0.16);
-  --text-primary: #ffffff;
-  --text-secondary: #9ca3af;
+  --bg-dark: #ffffff;
+  --bg-card: rgba(255, 255, 255, 0.85);
+  --border-color: rgba(0, 0, 0, 0.08);
+  --border-hover: rgba(0, 0, 0, 0.16);
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
   --text-muted: #6b7280;
 
   --font-heading: 'Outfit', sans-serif;
   --font-body: 'Plus Jakarta Sans', sans-serif;
 
-  color-scheme: dark;
+  color-scheme: light;
   background-color: var(--bg-dark);
   color: var(--text-primary);
   font-family: var(--font-body);
@@ -89,7 +89,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
 

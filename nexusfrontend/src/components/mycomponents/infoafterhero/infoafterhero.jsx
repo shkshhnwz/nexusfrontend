@@ -4,6 +4,58 @@ import './infoafterhero.css';
 export default function InfoAfterHero({ info }) {
   if (!info) return null;
 
+  // Render country migration card layout
+  if (info.type === 'country') {
+    return (
+      <div className={`stack-card-grid ${info.reverse ? 'reverse' : ''}`}>
+        {info.reverse ? (
+          <>
+            {/* Image on the left */}
+            <div className="stack-card-right">
+              <div className="image-placeholder-container">
+                <img src={info.image} alt={info.alt || 'Migration'} />
+                <div className="image-placeholder-overlay"></div>
+              </div>
+            </div>
+            {/* Text on the right */}
+            <div className="stack-card-left">
+              <div className="badge-tag">
+                <span className="badge-pulse"></span>
+                {info.badge || 'NEXUS MIGRATION'}
+              </div>
+              <h2 className="stack-title">{info.title}</h2>
+              {info.descriptions && info.descriptions.map((desc, idx) => (
+                <p key={idx} className="stack-description">{desc}</p>
+              ))}
+            </div>
+          </>
+        ) : (
+          <>
+            {/* Text on the left */}
+            <div className="stack-card-left">
+              <div className="badge-tag">
+                <span className="badge-pulse"></span>
+                {info.badge || 'NEXUS MIGRATION'}
+              </div>
+              <h2 className="stack-title">{info.title}</h2>
+              {info.descriptions && info.descriptions.map((desc, idx) => (
+                <p key={idx} className="stack-description">{desc}</p>
+              ))}
+            </div>
+            {/* Image on the right */}
+            <div className="stack-card-right">
+              <div className="image-placeholder-container">
+                <img src={info.image} alt={info.alt || 'Migration'} />
+                <div className="image-placeholder-overlay"></div>
+              </div>
+            </div>
+          </>
+        )}
+      </div>
+    );
+  }
+
+  // Default layout (servicesInfo)
   return (
     <div className="services-card-grid">
       <div className="services-left-col">
