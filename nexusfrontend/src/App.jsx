@@ -1,10 +1,12 @@
 import React from 'react';
 import Navbar from './components/mycomponents/Navbar/Navbar';
-import Strands from './components/ui/herobackground/herobacground';
+import LiquidChrome from './components/ui/herobackground/herobacground';
 import ScrollStack, { ScrollStackItem } from './components/ui/ScrollStack/ScrollStack';
 import InfoAfterHero from './components/mycomponents/infoafterhero/infoafterhero';
 import HeroSection from './components/mycomponents/HeroSection/HeroSection';
 import AssesmentForm from './components/mycomponents/AssesmentForm/AssesmentForm';
+import AchievementsVisual from './components/mycomponents/AcheivmentsandInfotab/Acheivementsandinfo';
+import CircularGallery from './components/mycomponents/CountriesGallery/CountriesGallery';
 import './App.css';
 
 const servicesInfo = {
@@ -80,21 +82,11 @@ export default function App() {
     <div className="app-container">
       {/* Background Glowing Waves */}
       <div className="background-waves">
-        <Strands
-          colors={['#ff4545', '#7c3aed', '#06b6d4', '#ff8e8e']}
-          count={5}
-          speed={0.4}
-          amplitude={1.2}
-          waviness={0.9}
-          thickness={0.6}
-          glow={2.8}
-          taper={2}
-          spread={1.2}
-          intensity={0.7}
-          saturation={1.8}
-          opacity={0.85}
-          scale={1.3}
-          glass={false}
+        <LiquidChrome
+          baseColor={[0.9372549019607843, 0.26666666666666666, 0.26666666666666666]}
+          speed={0.3}
+          amplitude={0.3}
+          interactive
         />
       </div>
 
@@ -142,7 +134,13 @@ export default function App() {
           <ScrollStackItem itemClassName="card-nz">
             <InfoAfterHero info={nzInfo} />
           </ScrollStackItem>
+
+          <ScrollStackItem itemClassName="card-achievements">
+            <AchievementsVisual />
+          </ScrollStackItem>
         </ScrollStack>
+
+        <CircularGallery />
       </div>
     </div>
   );

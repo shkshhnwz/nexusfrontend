@@ -3,13 +3,18 @@
   height: 100%;
   overflow: hidden;
   cursor: grab;
+  outline: none !important;
+  border: none !important;
 }
 
 .circular-gallery:active {
   cursor: grabbing;
 }
 
+.circular-gallery:focus {
+  outline: none !important;
+}
+
 .circular-gallery:focus-visible {
-  outline: 2px solid #fff;
-  outline-offset: 4px;
+  outline: none !important;
 }

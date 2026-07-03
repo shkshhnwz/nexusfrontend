@@ -434,18 +434,11 @@ class App {
   }
   createMedias(items, bend = 1, textColor, borderRadius, font) {
     const defaultItems = [
-      { image: `https://picsum.photos/seed/1/800/600?grayscale`, text: 'Bridge' },
-      { image: `https://picsum.photos/seed/2/800/600?grayscale`, text: 'Desk Setup' },
-      { image: `https://picsum.photos/seed/3/800/600?grayscale`, text: 'Waterfall' },
-      { image: `https://picsum.photos/seed/4/800/600?grayscale`, text: 'Strawberries' },
-      { image: `https://picsum.photos/seed/5/800/600?grayscale`, text: 'Deep Diving' },
-      { image: `https://picsum.photos/seed/16/800/600?grayscale`, text: 'Train Track' },
-      { image: `https://picsum.photos/seed/17/800/600?grayscale`, text: 'Santorini' },
-      { image: `https://picsum.photos/seed/8/800/600?grayscale`, text: 'Blurry Lights' },
-      { image: `https://picsum.photos/seed/9/800/600?grayscale`, text: 'New York' },
-      { image: `https://picsum.photos/seed/10/800/600?grayscale`, text: 'Good Boy' },
-      { image: `https://picsum.photos/seed/21/800/600?grayscale`, text: 'Coastline' },
-      { image: `https://picsum.photos/seed/12/800/600?grayscale`, text: 'Palm Trees' }
+      { image: `https://res.cloudinary.com/dc9xarlgi/image/upload/v1779788979/Australia_epv3it.webp`, text: 'Australia' },
+      { image: `https://res.cloudinary.com/dc9xarlgi/image/upload/v1783076818/europe_flag_image_iwdh7x.webp`, text: 'Europe' },
+      { image: `https://res.cloudinary.com/dc9xarlgi/image/upload/v1783076819/newzealandflagimage_vfg1gi.webp`, text: 'New Zealand' },
+      { image: `https://res.cloudinary.com/dc9xarlgi/image/upload/v1779788993/kanedda_pp39dw.webp`, text: 'Canada' },
+      { image: `https://res.cloudinary.com/dc9xarlgi/image/upload/v1783076818/europe_flag_image_iwdh7x.webp`, text: 'Europe' },
     ];
     const galleryItems = items && items.length ? items : defaultItems;
     this.mediasImages = galleryItems.concat(galleryItems);
@@ -591,7 +584,7 @@ class App {
 export default function CircularGallery({
   items,
   bend = 3,
-  textColor = '#ffffff',
+  textColor = '#000E24',
   borderRadius = 0.05,
   font = 'bold 30px Figtree',
   fontUrl,

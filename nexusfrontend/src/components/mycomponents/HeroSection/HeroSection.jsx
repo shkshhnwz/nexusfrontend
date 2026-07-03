@@ -37,7 +37,7 @@ export default function HeroSection() {
               width={true}
               weight={true}
               italic={true}
-              textColor="#ff4545"
+              textColor="#black"
               minFontSize={40}
             />
           </div>

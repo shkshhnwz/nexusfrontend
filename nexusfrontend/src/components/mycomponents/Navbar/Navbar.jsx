@@ -18,7 +18,7 @@ export default function Navbar() {
       <div className="navbar-content">
         {/* Logo Section */}
         <div className="navbar-logo">
-          <img src="https://res.cloudinary.com/dc9xarlgi/image/upload/v1782987884/NexusLogo_sxadke.webp" 
+          <img src="https://res.cloudinary.com/dc9xarlgi/image/upload/v1783074023/NexusLogo_1_mb5sve.webp" 
           alt="NexusLogo" />
         </div>
 
@@ -32,12 +32,6 @@ export default function Navbar() {
             onMouseEnter={() => setActiveDropdown('canada')}
             onMouseLeave={() => setActiveDropdown(null)}
           >
-            <button className="nav-link dropdown-toggle" onClick={() => toggleDropdown('canada')}>
-              Canada 
-              <svg className="chevron-icon" viewBox="0 0 24 24" width="16" height="16">
-                <path d="M7 10l5 5 5-5H7z" fill="currentColor"/>
-              </svg>
-            </button>
             <div className="dropdown-menu">
               <a href="#express-entry" className="dropdown-item">Express Entry</a>
               <a href="#pnp" className="dropdown-item">Provincial Nominee Program (PNP)</a>
@@ -62,6 +56,7 @@ export default function Navbar() {
               <a href="#uk" className="dropdown-item">United Kingdom</a>
               <a href="#usa" className="dropdown-item">United States</a>
               <a href="#europe" className="dropdown-item">Europe</a>
+              <a href="#Canada" className="dropdown-item">Canada</a>
             </div>
           </li>
           <li className="nav-item">
